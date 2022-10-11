@@ -1,0 +1,20 @@
+.app-cont {
+  max-width: 960px;
+  margin: 0 auto;
+  padding: 12px;
+  /* border: 2px solid #000; */
+}
+
+.my-nav-list {
+  display: flex;
+  padding: 0 12px;
+}
+
+.my-nav-list .mat-list-item {
+  color: #ddd;
+}
+
+.my-nav-list .mat-list-item.active-link {
+  color: #fff;
+  text-decoration: underline;
+}

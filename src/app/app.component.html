@@ -1,0 +1,17 @@
+<mat-toolbar color="primary"
+             class="my-nav">
+  <span>ngxs-starter</span>
+  <mat-nav-list class="my-nav-list">
+    <a *ngFor="let link of links"
+       mat-list-item
+       [routerLink]="link.path"
+       routerLinkActive="active-link"
+       ariaCurrentWhenActive="page">
+      {{ link.text }}
+    </a>
+  </mat-nav-list>
+</mat-toolbar>
+
+<div class="app-cont">
+  <router-outlet></router-outlet>
+</div>
