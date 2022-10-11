@@ -1,17 +1,19 @@
-<mat-toolbar color="primary"
-             class="my-nav">
+<mat-toolbar color="primary">
   <span>ngxs-starter</span>
-  <mat-nav-list class="my-nav-list">
+  <mat-nav-list class="flex px-4 py-1">
+
     <a *ngFor="let link of links"
        mat-list-item
        [routerLink]="link.path"
-       routerLinkActive="active-link"
+       class="text-gray-300"
+       routerLinkActive="text-white underline"
        ariaCurrentWhenActive="page">
       {{ link.text }}
     </a>
+
   </mat-nav-list>
 </mat-toolbar>
 
-<div class="app-cont">
+<div class="container mx-auto p-1">
   <router-outlet></router-outlet>
 </div>
